@@ -1,1 +1,1 @@
-# This a simple dictionary using Python
+# This a simple dictionary using Python.
