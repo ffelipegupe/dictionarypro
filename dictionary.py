@@ -15,4 +15,8 @@ def search(word):
 
 word = input("Enter the word: ")
 output = search(word)
-print("Definition: ", output)
+if type(output) == list:
+        for item in output:
+            print("Definition: ", item)
+else:
+    print("Definition: ", output)
