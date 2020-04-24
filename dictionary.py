@@ -26,8 +26,9 @@ def search(word):
 word = input("Enter the word: ")
 output = search(word)
 if type(output) == list:
-        for item in output:
-            print("Definition: ", item)
+    print("Definition/s: ")
+    for item in output:
+            print("-", item)
 elif output == "Word not found" or output == "Sorry, word not found":
     print("Sorry, word not found")
 elif output == "Wrong input":
