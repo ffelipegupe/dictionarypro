@@ -21,12 +21,16 @@ def search(word):
         else:
             return("Wrong input")
     else:
-        print("Word not found")
+        return("Word not found")
 
 word = input("Enter the word: ")
 output = search(word)
 if type(output) == list:
         for item in output:
             print("Definition: ", item)
+elif output == "Word not found" or output == "Sorry, word not found":
+    print("Sorry, word not found")
+elif output == "Wrong input":
+    print("Sorry, yes or no not entered")
 else:
     print("Definition: ", output)
